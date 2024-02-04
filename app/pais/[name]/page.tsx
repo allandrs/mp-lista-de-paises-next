@@ -59,7 +59,7 @@ export default async function CountryPage({
                     <b>🏙️ Capital:</b> - {country.capital}
                 </h2>}
                 <h2 className="text-xl text-gray-800">
-                    <b>🗺️ Continente:</b> - {country.region} {country.subregion && - `${country.subregion}`}
+                    <b>🗺️ Continente:</b> - {country.region} {country.subregion && `- ${country.subregion}`}
                 </h2>
                 <h2 className="text-xl text-gray-800">
                     <b>👨‍👩‍👧‍👦 População:</b> - {formatter.format(country.population)}
