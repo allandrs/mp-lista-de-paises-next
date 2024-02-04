@@ -18,7 +18,7 @@ export default function CountryCard({
             className="h64 min-w-full p-2 bg-white border-2 rounded-xl hover:boder-indigo-200 transition-all hover:shadow-xl"
             key={name}
         >
-            <div className="relative w-full h-40 p-2 overflow-hidden rounded-xl" >
+            <div className="relative w-full h-40 p-2 overflow-hidden rounded-xl my-4" >
                 <Image
                     src={flag}
                     alt={flagAlt}
