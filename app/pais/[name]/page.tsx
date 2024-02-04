@@ -92,13 +92,7 @@ export default async function CountryPage({
         </section>
         <div className="grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 w-full container">
             {borderCountries?.map((border) =>  (
-                <CountryCard
-                    key={country.name.common}
-                    name={country.name.common}
-                    ptName={country.translations.por.common}
-                    flag={country.flags.svg}
-                    flagAlt={country.flags.alt}
-                />
+             <CountryCard key={border.name}{...border} />
         ))}
         
 
